@@ -23,12 +23,24 @@ public class TestCisla {
         cislo = 1 + (int) (100 * Math.random());    // Získá náhodné číslo od 0 do 100.
         
         if (cislo % 2 == 0){    //Testuje zda je proměná cislo sudá.
-        
+                                
             System.out.println("Dostali jste sudé číslo " + cislo); // Proměná cislo je sudá
         
+                if (cislo < 50){
+                
+                    System .out .println("Číslo je menší než 50 a je sudé.");
+                    
+                }
+            
         }else{
         
-            System.out.println("Dostali jste liché čříslo " + cislo);   // Proměná cislo je lichá
+            System.out.println("Dostali jste liché číslo " + cislo);   // Proměná cislo je lichá
+            
+            if(cislo < 50){
+                
+                System.out.println("Číslo je menší než 50 a je liché " + cislo);
+                
+            }
             
         }
                        
